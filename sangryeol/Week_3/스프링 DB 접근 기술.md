@@ -59,15 +59,14 @@ cf) 템플릿 메소드 패턴 : https://steady-coding.tistory.com/384
         /* 학번이 10인 학생의 이름은 Zara로 수정 */
         String SQL = "update Student set name = ? where id = ?"; 
         jdbcTemplateObject.update(SQL, new Object[]{"Zara", 10});
-        https://gmlwjd9405.github.io/2018/12/19/jdbctemplate-usage.html
     ```
   - Deleteing a row into the table
     ```java
         /* 학번이 20인 학생을 삭제 */
         String SQL = "delete from Student where id = ?"; 
         jdbcTemplateObject.update(SQL, new Object[]{20});
-        https://gmlwjd9405.github.io/2018/12/19/jdbctemplate-usage.html
     ```
+ref) https://gmlwjd9405.github.io/2018/12/19/jdbctemplate-usage.html
 
 ### 아쉬운 점
 JDBC -> JdbcTemplate로 바꾸면 반복적인 코드는 줄게 되지만, SQL은 여전히 개발자가 직접 작성해야 한다.
