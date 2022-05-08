@@ -39,7 +39,7 @@ cf) 템플릿 메소드 패턴 : https://steady-coding.tistory.com/384
     ```java
         // 모든 학생의 수
         String SQL = "select count(*) from Student";
-        int rowCount = jdbcTemplateObject.qeuryForObject(SQL, Integer.class);
+        int rowCount = jdbcTemplateObject.queryForObject(SQL, Integer.class);
     ```
   - Query for an String
     ```java
